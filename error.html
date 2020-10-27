@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="format-detection" content="telephone=no">
 
-    <title>线上报修已暂停</title>
+    <title>线上报修服务不可用</title>
     <meta name="description" content="江南大学团通社电子技术部线上报修"/>
 
     <link rel="icon" href="./static/images/logo.png" type="image/x-icon"/>
@@ -31,15 +31,12 @@
             if (responseText.error === 1) {
                 if (responseText.body) {
                     window.location.replace("./index.html");
-                }
-            } else {
-                window.location.replace("./error.html");
+                }else{
+					window.location.replace("./notice.html");
+				}
             }
-        }  else {
-            window.location.replace("./error.html");
         }
     };
-
 </script>
 <div class="layui-header header">
 
@@ -62,13 +59,13 @@
 
         <div style="margin-top: 15px">
             <div style="margin-top: 20px; text-align: center">
-                <p style="font-size: 20px">通 知</p>
+                <p style="font-size: 20px">注 意</p>
             </div>
         </div>
 
         <div style="margin: 10px auto">
-            <p style="text-indent: 2em; line-height: 2em">因考试或假期暂停报修服务，敬请谅解。</p>
-            <p style="text-indent: 2em; line-height: 2em">报修系统将于考试结束或开学后重新开启。</p>
+            <p style="text-indent: 2em; line-height: 2em">因受到外星人干扰，线上报修服务暂时不可用</p>
+            <p style="text-indent: 2em; line-height: 2em">我们将尽快恢复报修，感谢您的理解</p>
             <p style="text-indent: 2em; line-height: 2em">你也可以先加入我们的线上交流群，我们的同学们有时间了会尽快帮你解决问题。</p>
             <p style="line-height: 2em">
                 线上交流QQ群：459121889。 <a
